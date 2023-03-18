@@ -35,7 +35,12 @@ const Home = () => {
     dispatch(getAllData(query));
   }, [dispatch, query]);
   return (
-    <div className="container">
+    <div
+      className="container"
+      style={{
+        backgroundImage: `url(${PUBLIC_IMAGES_PATH + "/stockmarketbg.jpg"})`,
+        backgroundRepeat: "no-repeat",backgroundPosition : "center" , backgroundSize
+: "100%"      }}>
       <header className="header">
         <div className="title">Home</div>
         <nav>
@@ -53,6 +58,7 @@ const Home = () => {
           </ul>
         </nav>
       </header>
+
       <form className="search-form">
         <input
           id="searchBox"
