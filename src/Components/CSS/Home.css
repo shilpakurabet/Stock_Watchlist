@@ -179,7 +179,7 @@ nav a {
   }
   .suggestions-container {
     width: 280px;
-    max-height: 280px;
+    max-height: 250px;
     font-size: 12px;
   }
   .addBtn {
@@ -190,5 +190,20 @@ nav a {
     cursor: pointer;
     font-size: 14px;
     font-weight: bold;
+  }
+  .popup {
+    text-align: start;
+    position: absolute;
+    background-color: white;
+    width: auto;
+    padding: 15px;
+    border-radius: 5px;
+    color: green;
+    transition: all 0.8s ease-out;
+    font-size: 12px;
+    font-weight: 600;
+    bottom: 2%;
+    left: 3%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   }
 }
