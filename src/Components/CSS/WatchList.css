@@ -1,0 +1,118 @@
+/** @format */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 50px;
+  background-color: #333;
+  color: #fff;
+}
+
+.title {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.tableContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 80%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-top: 50px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #6a4662;
+  color: #fff;
+}
+tr:hover {
+  background-color: #f1f1f1;
+}
+.homeLink {
+  font-size: 18px;
+}
+
+.watch-list {
+  margin: auto;
+  width: 50%;
+  font-size: 24px;
+  color: #777;
+  text-align: center;
+  min-width: 250px;
+  padding: 20px;
+  border: 2px dashed #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin-top: 50px;
+}
+.watch-list img {
+  height: 60px;
+  width: 60px;
+  display: block;
+  text-align: center;
+  margin: auto;
+}
+.empty-message {
+  display: block;
+}
+
+.delete-btn {
+  font-size: 12px;
+  font-weight: 500;
+  color: white;
+  background-color: red;
+  border: none;
+  border-radius: 3px;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease-out;
+  letter-spacing: 1px;
+}
+
+.delete-btn:hover {
+  background-color: white;
+  color: red;
+  border: 1px solid red;
+}
+
+@media only screen and (max-width: 600px) {
+  .empty-message {
+    font-size: 14px;
+  }
+  .header {
+    padding: 10px 30px;
+  }
+  .title {
+    font-size: 25px;
+  }
+  .tableContainer {
+    width: 95%;
+  }
+  th,
+  td {
+    padding: 2px;
+    font-size: 10px;
+    border-right: 1px solid #ddd;
+  }
+  .delete-btn {
+    font-size: 8px;
+    padding: 3px 5px;
+    letter-spacing: 0;
+  }
+}
