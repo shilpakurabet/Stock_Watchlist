@@ -79,7 +79,10 @@ const Home = () => {
             {data?.bestMatches?.map((item, index) => {
               return (
                 <div className="suggestion" key={index}>
-                  <div> {item["2. name"]} </div>{" "}
+                  <div>
+                    {" "}
+                    {item["2. name"]} - score ({item["9. matchScore"]}){" "}
+                  </div>{" "}
                   <button
                     className="addBtn"
                     onClick={(e) => {
